@@ -80,7 +80,7 @@ const PortfolioPage = () => {
         <div className='navbar-start'>
           <a href='' className="md:avatar hidden">
             <div className="ml-8 h-12 rounded-full">
-              <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+              <img src="avatar_img.jpg" />
             </div>
           </a>
         </div>
@@ -128,25 +128,32 @@ const PortfolioPage = () => {
           </div>
         </section>
         */}
+        {/*ABOUT SECTION*/}
         {
-        <section id="about" className='min-h-screen bg-base-100 m-auto max-x-screen-md'>
+        <section id="about" className='min-h-fit h-full bg-base-100 m-auto max-x-screen-md'>
           <div className='grid md:grid-cols-2 gap-12 place-content-center h-screen w-full'>
             <div class="col-span-1 avatar size-80 my-auto place-self-center md:place-self-end">
-              <img 
-                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" 
-                  alt="Profile" 
-                  className="rounded-full w-60 h-auto md:80 md object-cover shadow-lg"
-              />
+              <img src="/avatar_img.jpg" className="rounded-full w-60 h-auto md:80 md object-cover shadow-lg"/>
             </div>
             <div class="col-span-1 my-auto place-self-center md:place-self-start w-3/4 lg:w-125 ">
               <hgroup className='w-full'>
                 <h1 className='text-6xl font-bold mb-8'>Hey, I'm David</h1>
-                <p className='text-xl'>I'm a Software Engineer who enjoys developing <span className='italic'>sometimes</span> useful things that solve problems.</p>
+                <p className='text-xl mb-10'>I'm a Software Engineer who enjoys developing <span className='italic'>sometimes</span> useful things that solve problems.</p>
+                <a href='https://www.linkedin.com/in/dmai2025' className='w-fit block' target="_blank" rel="noopener noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" className='size-12' viewBox="0 0 128 128">
+                    <path fill="#0076b2" d="M116 3H12a8.91 8.91 0 0 0-9 8.8v104.42a8.91 8.91 0 0 0 9 8.78h104a8.93 8.93 0 0 0 9-8.81V11.77A8.93 8.93 0 0 0 116 3" />
+                    <path fill="#fff" d="M21.06 48.73h18.11V107H21.06zm9.06-29a10.5 10.5 0 1 1-10.5 10.49a10.5 10.5 0 0 1 10.5-10.49m20.41 29h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53z" />
+                  </svg>
+                </a>
               </hgroup>
             </div>
           </div>
         </section>
         }
+
+        {/*SKILLS SECTION*/}
+        <section id="skils">
+        </section>
 
 
         {/* Projects Section */}
@@ -184,7 +191,7 @@ const PortfolioPage = () => {
           </div>
         </section>
 
-        {/* Skills Section */}
+        {/* Skills Section 
         <section id="skills" className="min-h-screen bg-white flex items-center">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-12">Skills</h2>
@@ -214,6 +221,7 @@ const PortfolioPage = () => {
             </div>
           </div>
         </section>
+        */}
       </div>
     </div>
   );
