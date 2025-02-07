@@ -5,8 +5,9 @@ const PortfolioPage = () => {
 
   const sections = [
     { id: 'about', title: 'About' },
-    { id: 'projects', title: 'Projects' },
     { id: 'skills', title: 'Skills' },
+    { id: 'work', title: 'Work' },
+    { id: 'projects', title: 'Projects' },
   ];
 
   const projects = [
@@ -50,7 +51,7 @@ const PortfolioPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      {/* Fixed Navigation Bar */}
+      {/* Fixed Navigation Bar 
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <div className="text-2xl font-bold text-gray-800">
@@ -74,12 +75,39 @@ const PortfolioPage = () => {
             ))}
           </div>
         </div>
-      </nav>
+      </nav>*/}
+      <div className='fixed navbar bg-base-300 top-0 z-1'>
+        <div className='navbar-start'>
+          <a href='' className="md:avatar hidden">
+            <div className="ml-8 h-12 rounded-full">
+              <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+            </div>
+          </a>
+        </div>
+        <div className='navbar-center space-x-6'>
+        {sections.map((section) => (
+              <a 
+                key={section.id}
+                href={`#${section.id}`}
+                onClick={() => setActiveSection(section.id)}
+                className={`
+                  text-base transition-colors duration-300
+                  ${activeSection === section.id 
+                    ? 'text-blue-600 font-semibold' 
+                    : 'text-gray-600 hover:text-blue-600'}
+                `}
+              >
+                {section.title}
+              </a>
+            ))}
+        </div>
+        <div className='navbar-end'></div>
+      </div>
 
       {/* Scrollable Content */}
-      <div className="pt-20">
-        {/* About Section */}
-        <section id="about" className="min-h-screen bg-white flex items-center">
+      <div className="pt-16">
+        {/*
+        <section id="about" className="min-h-screen bg-base-500 flex items-center">
           <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-4xl font-bold mb-6">About Me</h2>
@@ -99,6 +127,27 @@ const PortfolioPage = () => {
             </div>
           </div>
         </section>
+        */}
+        {
+        <section id="about" className='min-h-screen bg-base-100 m-auto max-x-screen-md'>
+          <div className='grid md:grid-cols-2 gap-12 place-content-center h-screen w-full'>
+            <div class="col-span-1 avatar size-80 my-auto place-self-center md:place-self-end">
+              <img 
+                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" 
+                  alt="Profile" 
+                  className="rounded-full w-60 h-auto md:80 md object-cover shadow-lg"
+              />
+            </div>
+            <div class="col-span-1 my-auto place-self-center md:place-self-start w-3/4 lg:w-125 ">
+              <hgroup className='w-full'>
+                <h1 className='text-6xl font-bold mb-8'>Hey, I'm David</h1>
+                <p className='text-xl'>I'm a Software Engineer who enjoys developing <span className='italic'>sometimes</span> useful things that solve problems.</p>
+              </hgroup>
+            </div>
+          </div>
+        </section>
+        }
+
 
         {/* Projects Section */}
         <section id="projects" className="min-h-screen bg-gray-50 py-16">
