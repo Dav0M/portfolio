@@ -5,7 +5,7 @@ const Nav = () => {
 
   const sections = [
     { id: 'about', title: 'About' },
-    { id: 'work', title: 'Work' },
+    { id: 'experience', title: 'Experience' },
     { id: 'projects', title: 'Projects' },
     { id: 'skills', title: 'Skills' },
   ];

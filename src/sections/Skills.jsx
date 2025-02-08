@@ -2,7 +2,7 @@ import SkillIcon from "../components/SkillIcon";
 
 const Skills = () => {
   return (
-    <section id="skills" className="bg-base-200 py-15 pb-100 w-full place-center">
+    <section id="skills" className="bg-base-100 py-15 pb-100 w-full place-center">
 
       <h2 className="font-bold text-4xl text-center mb-10">Skills</h2>
       <div className="flex flex-wrap gap-5 justify-center max-w-5xl m-auto">
