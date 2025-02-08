@@ -9,9 +9,15 @@ const Projects = () => {
     },
     {
       title: 'Foodie Mate',
-      description: 'Recipe and ingrediant tracker with meal planning and nutrition calculators',
+      description: "A home cook's best friend - recipe and ingredient tracking with weekly meal planning and nutrition calculators",
       technologies: ['Azure', 'MongoDB', 'React'],
       imageUrl: '/foodiemate_recipes.png'
+    },
+    {
+      title: 'MAPost',
+      description: 'A location-centric social platform to share images and coordinates with others nearby',
+      technologies: ['React', 'Azure', 'PostgreSQL'],
+      imageUrl: '/mapost_map.png'
     },
     {
       title: 'Discord Manga Bot',
@@ -21,15 +27,9 @@ const Projects = () => {
     },
     {
       title: 'MTCH-MKR',
-      description: 'UI/UX design and research project about a third-party gaming matchmaker',
+      description: 'UI/UX design and research project about a hypothetical third-party online gaming matchmaker',
       technologies: ['Figma'],
       imageUrl: '/mtch_mkr.jpg'
-    },
-    {
-      title: 'MAPost',
-      description: 'Location-centric social platform to share images and coordinates',
-      technologies: ['React', 'Azure', 'PostgreSQL'],
-      imageUrl: '/mapost_map.png'
     },
   ];
 

@@ -6,6 +6,7 @@ const Work = () => {
       position: 'Software Engineer Intern',
       description: 'Worked with a team to create a dashboard MVP to handle clinical data from a medical device',
       imageUrl: '/neurotype.png',
+      link: 'https://www.neurotype.io/'
     },
   ]
   return (
@@ -24,7 +25,7 @@ const Work = () => {
                 className="w-full h-48 object-cover object-[0%+20%]"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold">{exp.company}</h3>
+                <h3 className="text-xl font-semibold"><a href={exp.link} className="underline text-purple-400 hover:text-purple-200" target="_blank" rel="noopener noreferrer">{exp.company}</a></h3>
                 <h4 className="mb-2 italic">{exp.position}</h4>
                 <p className="text-gray-400 mb-4">{exp.description}</p>
               </div>
