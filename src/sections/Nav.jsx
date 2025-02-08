@@ -11,7 +11,7 @@ const Nav = () => {
   ];
 
   return (
-    <div className='fixed navbar bg-base-300 top-0 z-1'>
+    <header className='fixed navbar bg-base-300 top-0 z-1'>
       <div className='navbar-start'>
         <a href='' className="md:avatar hidden">
           <div className="ml-8 h-12 rounded-full">
@@ -37,7 +37,7 @@ const Nav = () => {
         ))}
       </div>
       <div className='navbar-end'></div>
-    </div>
+    </header>
   );
 };
 

@@ -7,16 +7,11 @@ import Projects from './sections/Projects';
 
 const PortfolioPage = () => {
   return (
-    <div className="min-h-screen bg-gray-100">
-
-      {/* Scrollable Content */}
-      <div className="">
-        <About/>
-        <Work/>
-        <Projects/>
-        <Skills/>
-      </div>
-
+    <div className="bg-gray-100">
+      <About/>
+      <Work/>
+      <Projects/>
+      <Skills/>
     </div>
   );
 };
