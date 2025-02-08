@@ -9,7 +9,7 @@ const About = () => {
         </div>
         <div class="col-span-1 my-auto place-self-center md:place-self-start w-3/4 lg:w-125 ">
           <hgroup className='w-full'>
-            <h1 className='text-6xl font-bold mb-8'>Hey, I'm David</h1>
+            <p className='text-6xl font-bold mb-8'>Hey, I'm David</p>
             <p className='text-xl mb-10'>I'm a Software Engineer who enjoys developing <span className='italic'>sometimes</span> useful things that solve problems.</p>
             <a href='https://www.linkedin.com/in/dmai2025' className='w-fit' target="_blank" rel="noopener noreferrer">
               <svg xmlns="http://www.w3.org/2000/svg" className='size-12 hover:scale-115' viewBox="0 0 128 128">
