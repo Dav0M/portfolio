@@ -2,10 +2,10 @@
 
 const About = () => {
   return (
-    <section id="about" className='h-screen min-h-150 bg-base-100 m-auto max-x-screen-md place-content-center'>
+    <section id="about" className='h-screen min-h-250 bg-base-100 m-auto max-x-screen-md place-content-center'>
       <div className='grid md:grid-cols-2 gap-12 place-content-center w-full my-12'>
-        <div class="col-span-1 avatar size-80 my-auto place-self-center md:place-self-end">
-          <img src="avatar_img.jpg" className="hover:animate-spin rounded-full w-60 h-auto md:80 md object-cover shadow-lg"/>
+        <div class="col-span-1 avatar size-60 md:size-80 my-auto place-self-center md:place-self-end">
+          <img src="avatar_img.jpg" className="hover:animate-spin rounded-full h-auto object-cover"/>
         </div>
         <div class="col-span-1 my-auto place-self-center md:place-self-start w-3/4 lg:w-125 ">
           <hgroup className='w-full'>
@@ -25,27 +25,3 @@ const About = () => {
 };
 
 export default About;
-
-
-{/*
-<section id="about" className="min-h-screen bg-base-500 flex items-center">
-  <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
-    <div>
-      <h2 className="text-4xl font-bold mb-6">About Me</h2>
-      <p className="text-gray-600 leading-relaxed">
-        Passionate software developer with 5+ years of experience 
-        in web and mobile application development. Specializing in 
-        modern JavaScript frameworks and creating intuitive, 
-        user-friendly interfaces.
-      </p>
-    </div>
-    <div className="flex justify-center">
-      <img 
-        src="/api/placeholder/400/400" 
-        alt="Profile" 
-        className="rounded-full w-64 h-64 object-cover shadow-lg"
-      />
-    </div>
-  </div>
-</section>
-*/}

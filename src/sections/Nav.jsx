@@ -42,30 +42,3 @@ const Nav = () => {
 };
 
 export default Nav;
-
-{/*
-  <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
-    <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-      <div className="text-2xl font-bold text-gray-800">
-        <a href=''>David Mai</a>
-      </div>
-      <div className="flex space-x-6">
-        {sections.map((section) => (
-          <a 
-            key={section.id}
-            href={`#${section.id}`}
-            onClick={() => setActiveSection(section.id)}
-            className={`
-              text-base transition-colors duration-300
-              ${activeSection === section.id 
-                ? 'text-blue-600 font-semibold' 
-                : 'text-gray-600 hover:text-blue-600'}
-            `}
-          >
-            {section.title}
-          </a>
-        ))}
-      </div>
-    </div>
-  </nav>
-*/}
