@@ -5,7 +5,7 @@ const Work = () => {
       company: 'Neurotype Inc.',
       position: 'Software Engineer Intern',
       description: 'Worked with a team to create a dashboard MVP to handle clinical data from a medical device',
-      imageUrl: '/neurotype.png',
+      imageUrl: 'neurotype.png',
       link: 'https://www.neurotype.io/'
     },
   ]

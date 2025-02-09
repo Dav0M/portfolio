@@ -5,7 +5,7 @@ const About = () => {
     <section id="about" className='h-screen min-h-150 bg-base-100 m-auto max-x-screen-md place-content-center'>
       <div className='grid md:grid-cols-2 gap-12 place-content-center w-full my-12'>
         <div class="col-span-1 avatar size-80 my-auto place-self-center md:place-self-end">
-          <img src="/avatar_img.jpg" className="hover:animate-spin rounded-full w-60 h-auto md:80 md object-cover shadow-lg"/>
+          <img src="avatar_img.jpg" className="hover:animate-spin rounded-full w-60 h-auto md:80 md object-cover shadow-lg"/>
         </div>
         <div class="col-span-1 my-auto place-self-center md:place-self-start w-3/4 lg:w-125 ">
           <hgroup className='w-full'>
