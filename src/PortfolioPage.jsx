@@ -9,9 +9,9 @@ const PortfolioPage = () => {
   return (
     <div className="bg-gray-100">
       <About/>
-      <Work/>
-      <Projects/>
+      {/* <Work/> */}
       <Skills/>
+      <Projects/>
     </div>
   );
 };

@@ -1,19 +1,18 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 const Nav = () => {
-  const [activeSection, setActiveSection] = useState('about');
+  //const [activeSection, setActiveSection] = useState('about');
 
   const sections = [
     { id: 'about', title: 'About' },
-    { id: 'experience', title: 'Experience' },
-    { id: 'projects', title: 'Projects' },
     { id: 'skills', title: 'Skills' },
+    { id: 'projects', title: 'Projects' },
   ];
 
   return (
     <header className='fixed navbar bg-base-300 top-0 z-1'>
       <div className='navbar-start'>
-        <a href='' className="md:avatar hidden">
+        <a href='#' className="md:avatar hidden">
           <div className="ml-8 h-12 rounded-full">
             <img src="avatar_img.jpg" className='hover:animate-spin'/>
           </div>
@@ -24,13 +23,7 @@ const Nav = () => {
           <a 
             key={section.id}
             href={`#${section.id}`}
-            onClick={() => setActiveSection(section.id)}
-            className={`
-              text-base transition-colors duration-300
-              ${activeSection === section.id 
-                ? 'text-blue-600 font-semibold' 
-                : 'text-gray-600 hover:text-blue-600'}
-            `}
+            className='text-gray-600 transition-colors duration-300 hover:text-blue-600'
           >
             {section.title}
           </a>
@@ -42,3 +35,13 @@ const Nav = () => {
 };
 
 export default Nav;
+
+{ /*
+  onClick={() => setActiveSection(section.id)}
+  className={`
+    text-base transition-colors duration-300
+    ${activeSection === section.id 
+      ? 'text-blue-600 font-semibold' 
+      : 'text-gray-600 hover:text-blue-600'}
+  `}
+  */}
