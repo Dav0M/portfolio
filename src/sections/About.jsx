@@ -3,7 +3,7 @@
 const About = () => {
   return (
     <section id="about" className='h-screen min-h-250 bg-base-100 m-auto max-x-screen-md place-content-center'>
-      <div className='grid md:grid-cols-2 gap-12 place-content-center w-full my-12'>
+      <div className='grid md:grid-cols-2 gap-12 w-full my-auto'>
         <div class="col-span-1 avatar size-60 md:size-80 my-auto place-self-center md:place-self-end">
           <img src="avatar_img.jpg" className="hover:animate-spin rounded-full h-auto object-cover"/>
         </div>
