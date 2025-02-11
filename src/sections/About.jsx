@@ -2,8 +2,8 @@
 
 const About = () => {
   return (
-    <section id="about" className='h-screen min-h-250 bg-base-100 m-auto max-x-screen-md content-center'>
-      <div className='grid md:grid-cols-2 gap-12 w-full'>
+    <section id="about" className='h-screen min-h-250 bg-base-100 m-auto max-x-screen-md flex'>
+      <div className='grid md:grid-cols-2 gap-12 w-full h-fit my-auto'>
         <div class="col-span-1 avatar size-60 md:size-80 my-auto place-self-center md:place-self-end">
           <img src="avatar_img.jpg" className="hover:animate-spin rounded-full h-auto object-cover"/>
         </div>
