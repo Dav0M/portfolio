@@ -23,7 +23,7 @@ const Nav = () => {
           <a 
             key={section.id}
             href={`#${section.id}`}
-            className='text-gray-600 transition-colors duration-300 hover:text-blue-600'
+            className='text-base text-lg transition-colors duration-300 hover:text-blue-600'
           >
             {section.title}
           </a>
