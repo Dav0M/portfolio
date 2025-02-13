@@ -4,32 +4,38 @@ const Projects = () => {
     {
       title: 'Mai SecretSanta Manager',
       description: 'All-in-one management and handling for my friend groups yearly secret santa event without the extra features',
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'Java', 'Spring'],
+      technologies: [],
       imageUrl: 'mai_ss.png'
     },
     {
       title: 'Foodie Mate',
       description: "A home cook's best friend - recipe and ingredient tracking with weekly meal planning and nutrition calculators",
-      technologies: ['Azure', 'MongoDB', 'React'],
+      technologies: [],
       imageUrl: 'foodiemate_recipes.png'
     },
     {
       title: 'MAPost',
       description: 'A location-centric social platform to share images and coordinates with others nearby',
-      technologies: ['React', 'Azure', 'PostgreSQL'],
+      technologies: [],
       imageUrl: 'mapost_map.png'
     },
     {
       title: 'Discord Manga Bot',
       description: 'Personal discord bot that scans the r/OnePunchMan subreddit for the latest manga chapter translations',
-      technologies: ['Python'],
+      technologies: [],
       imageUrl: 'opm_bot.jpg'
     },
     {
       title: 'MTCH-MKR',
       description: 'UI/UX design and research project about a hypothetical third-party online gaming matchmaker',
-      technologies: ['Figma'],
+      technologies: [],
       imageUrl: 'mtch_mkr.jpg'
+    },
+    {
+      title: 'Drone Simulation System',
+      description: 'A web application that allows users to simulate a drone delivery on the UMN campus using different pathing strategies',
+      technologies: [],
+      imageUrl: 'drone_sim.png'
     },
   ];
 
